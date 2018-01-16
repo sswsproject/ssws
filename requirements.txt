@@ -1,2 +1,2 @@
-aiohttp==2.3.2
+aiohttp==2.3.6
 pycryptodome==3.4.7
