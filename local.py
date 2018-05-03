@@ -117,7 +117,7 @@ async def localproxy(reader, writer):
                     
                         senddata = addrToSend
                         encdata = myencrypt(senddata,key)
-                        ws.send_bytes(encdata[0] + encdata[1])
+                        await ws.send_bytes(encdata[0] + encdata[1])
                         
                         future1 = asyncio.run_coroutine_threadsafe(localreader(client_address, key, reader, ws), loop)
                         future2 = asyncio.run_coroutine_threadsafe(localwriter(client_address, writer, queue), loop)
