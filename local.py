@@ -9,7 +9,7 @@ from encrypt import myencrypt,mydecrypt
 
 VERSION = (0, 1)
 __version__ = '.'.join(map(str, VERSION[0:2]))
-__homepage__ = 'https://github.com/bigbagboom/ssws'
+__homepage__ = 'https://github.com/sswsproject/ssws'
 
 config = { 'key' : '', 
            'concurrent' : 0,
